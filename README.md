@@ -12,6 +12,7 @@ Penelitian ini bertujuan untuk mengetahui tingkat kepuasan mahasiswa FMIPA Unive
 1.	Mengetahui tingkat kepuasan mahasiswa FMIPA Universitas Mataram terhadap penggunaan layanan keuangan digital.  
 2.	Menentukan jumlah sampel penelitian menggunakan rumus Slovin. 
 3.	Menguji validitas dan reliabilitas instrumen kuisioner yang digunakan dalam penelitian.
+4.	Membandingkan hasil estimasi menggunakan metode naive estimator dan weighted estimator dalam mengukur tingkat kepuasan responden.
 
 ## Metode
 Penelitian ini merupakan penelitian kuantitatif dengan pendekatan survei online. Data diperoleh melalui penyebaran kuesioner menggunakan Google Form kepada mahasiswa FMIPA Universitas Mataram mengenai penggunaan layanan keuangan digital, seperti E-Wallet dan Mobile Banking.
