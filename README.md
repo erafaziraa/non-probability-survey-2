@@ -55,6 +55,46 @@ Uji reliabilitas dilakukan untuk mengetahui tingkat konsistensi instrumen peneli
 ```r
 hasil_baru$total$raw_alpha
 ```
+### Analisis Deskriptif
+Tahap ini dilakukan untuk analisis deskriptif menggunakan R dengan menghitung frekuensi dan persentase pada variabel data responden guna mengetahui sebaran data responden.
+```r
+table(data$`Jenis Kelamin`)
+prop.table(table(data$`Jenis Kelamin`)) * 100
+```
+### Tabel Distribusi Frekuensi dan Persentase
+Tahap ini dilakukan untuk menyajikan hasil analisis dalam bentuk tabel distribusi frekuensi dan persentase agar memudahkan dalam melihat sebaran data pada setiap kategori variabel.
+```r
+frekuensi <- table(data_kuesioner1$`Jenis Kelamin`)
+frekuensi
+
+persentase <- prop.table(frekuensi) * 100
+persentase
+
+tabel_jenis_kelamin <- data.frame(
+  Jenis_Kelamin = names(frekuensi),
+  Frekuensi = as.vector(frekuensi),
+  Persentase = round(as.vector(persentase), 2)
+)
+tabel_jenis_kelamin
+```
+### Grafik Distribusi Responden
+Tahap ini dilakukan untuk menyajikan data dalam bentuk grafik distribusi responden agar sebaran setiap kategori variabel dapat terlihat lebih jelas dan mudah dipahami.
+```r
+barplot(
+  table(data_kuesioner1$`Jenis Kelamin`),
+  main = "Distribusi Responden Berdasarkan Jenis Kelamin"
+)
+
+frekuensi_usia <- table(data_kuesioner1$Usia)
+
+barplot(
+  frekuensi_usia,
+  main = "Distribusi Responden Berdasarkan Usia",
+  xlab = "Usia",
+  ylab = "Frekuensi",
+  col = "grey"
+)
+```
 ### Naive Estimation
 Tahap ini dilakukan untuk menghitung naive estimation sebagai nilai pembanding dasar dalam pemodelan, yaitu dengan mengasumsikan kelas mayoritas sebagai hasil prediksi utama tanpa mempertimbangkan variabel lain.
 ```r
@@ -147,6 +187,24 @@ Uji reliabilitas instrumen penelitian dilakukan untuk mengetahui tingkat konsist
 Uji reliabilitas dilakukan setelah proses eliminasi item tidak valid, sehingga hanya item yang telah memenuhi kriteria validitas yang digunakan dalam pengujian ini. Hal ini dilakukan agar hasil reliabilitas yang diperoleh mencerminkan kualitas instrumen penelitian secara lebih akurat.
 
 Berdasarkan hasil pengujian, diperoleh nilai Cronbach’s Alpha sebesar 0,8460946. Nilai tersebut menunjukkan bahwa instrumen penelitian memiliki tingkat reliabilitas yang sangat baik, sehingga dapat disimpulkan bahwa instrumen yang digunakan bersifat konsisten dan dapat dipercaya untuk digunakan dalam analisis selanjutnya.
+### Analsis Deskriptif
+| Jenis Kelamin | Frekuensi | Persentase |
+|---|---|---|
+| Laki-laki | 12 | 27.27% |
+| Perempuan | 32 | 72.73% |
+| Total | 44 | 100% |
+
+Berdasarkan hasil survei dengan jumlah responden sebanyak 44 orang, dipeproleh hasil bahwa 12 responden laki-laki (27.27%) dan 32 responden perempuan (72,73%). Data tersebut menunjukkan bahwa responden dalam penelitian ini didominasi oleh perempuan.
+
+| Usia | Frekuensi | Persentase |
+|---|---|---|
+| <20 tahun | 3 | 10.00% |
+| >22 tahun | 1 | 3.33% |
+| 20–22 tahun | 26 | 86.67% |
+| Total | 30 | 100% |
+
+Berdasarkan hasil survei dengan jumlah responden sebanyak 30 orang, diperoleh hasil bahwa 3 responden berusia <20 tahun (10,0%), 26 responden berusia 20–22 tahun (86,67%), dan 1 responden berusia >22 tahun (3,33%). Data tersebut menunjukkan bahwa responden dalam penelitian ini didominasi oleh usia 20–22 tahun.
+
 ### Naive Estimation
 Naive estimation digunakan untuk memperoleh estimasi awal tingkat kepuasan mahasiswa berdasarkan data responden secara langsung tanpa memberikan pembobotan pada data. Berdasarkan hasil analisis menggunakan R diperoleh:
 
