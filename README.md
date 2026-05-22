@@ -197,15 +197,6 @@ Berdasarkan hasil pengujian, diperoleh nilai Cronbach’s Alpha sebesar 0,846094
 
 Berdasarkan hasil survei dengan jumlah responden sebanyak 44 orang, dipeproleh hasil bahwa 12 responden laki-laki (27.27%) dan 32 responden perempuan (72,73%). Data tersebut menunjukkan bahwa responden dalam penelitian ini didominasi oleh perempuan.
 
-| Usia | Frekuensi | Persentase |
-|---|---|---|
-| <20 tahun | 3 | 10.00% |
-| >22 tahun | 1 | 3.33% |
-| 20–22 tahun | 26 | 86.67% |
-| Total | 30 | 100% |
-
-Berdasarkan hasil survei dengan jumlah responden sebanyak 30 orang, diperoleh hasil bahwa 3 responden berusia <20 tahun (10,0%), 26 responden berusia 20–22 tahun (86,67%), dan 1 responden berusia >22 tahun (3,33%). Data tersebut menunjukkan bahwa responden dalam penelitian ini didominasi oleh usia 20–22 tahun.
-
 ### Naive Estimation
 Naive estimation digunakan untuk memperoleh estimasi awal tingkat kepuasan mahasiswa berdasarkan data responden secara langsung tanpa memberikan pembobotan pada data. Berdasarkan hasil analisis menggunakan R diperoleh:
 
